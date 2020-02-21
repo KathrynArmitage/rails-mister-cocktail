@@ -1,7 +1,4 @@
-
-  <h1><%=  @cocktail.name %></h1>
-
-
+<h1><%=  @cocktail.name %></h1>
 <ul class="list-group">
   <% @cocktail.doses.each do |dose| %>
     <%= dose.description %>
@@ -10,6 +7,9 @@
  <% end %>
 </ul>
 
- <%=link_to 'Add a new Ingredient', new_cocktail_dose_path(@cocktail) %>
+ <%=link_to 'Add a new Ingredient', new_cocktail_dose_path(@cocktail), class: "new-ingredient" %>
+
+ <%=link_to 'Back to Cocktail Homepage', cocktails_path %>
+
 
 

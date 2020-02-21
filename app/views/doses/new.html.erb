@@ -1,6 +1,8 @@
-<%= simple_form_for [ @cocktail, @dose] do |f| %>
+<%= simple_form_for [ @cocktail, @dose],html: { class: "form" } do |f| %>
   <%= f.input :description %>
   <%= f.input :ingredient_id, collection: Ingredient.all %>
   <%= f.submit "Update Cocktail", class: "btn btn-primary" %>
 <% end %>
-  <%=link_to 'Back to Cocktail Homepage', cocktails_path %>
+  <%=link_to 'Back to Cocktail Homepage', cocktails_path,class: "back"} %>
+
+

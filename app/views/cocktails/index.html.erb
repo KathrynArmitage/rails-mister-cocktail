@@ -1,5 +1,5 @@
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
+  <div class="carousel-inner mb-4">
     <div class="carousel-item active">
       <img class="d-block w-100" src="https://images.unsplash.com/photo-1502819126416-d387f86d47a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2978&q=80" alt="First slide">
     </div>
@@ -18,7 +18,7 @@
   <% @cocktails.each do |cocktail| %>
     <%= link_to cocktail_path(cocktail.id) do  %>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1546171753-97d7676e4602?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80" class="card-img-top" alt="...">
+       <%= cl_image_tag cocktail.photo.key, class: "card-img-top" %>
         <div class="card-body">
           <p class="card-text"><%=cocktail.name%></p>
         </div>
@@ -26,33 +26,9 @@
     <% end %>
   <% end %>
 </div>
-<div class = "container">
-<div class="card">
-  <img src="https://images.unsplash.com/photo-1578951906067-239d35ff252e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2800&q=80" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Champagne.</p>
-  </div>
-</div>
-<div class="card">
-  <img src="https://images.unsplash.com/photo-1582056509381-33e11b85733f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2776&q=80" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Dark & Stormy.</p>
-  </div>
-</div>
-<div class="card">
-  <img src="https://images.unsplash.com/photo-1527091755570-1daada653420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2843&q=80" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Gin & Tonic.</p>
-  </div>
-</div>
-<div class="card">
-  <img src="https://images.unsplash.com/photo-1536599424071-0b215a388ba7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Margerita.</p>
-  </div>
-</div>
-</div>
 
-
+ <footer>
+        <p>© 2020 Kathryn Armitage</p>
+    </footer>
 
 
