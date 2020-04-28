@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: space-between;
-   flex-wrap:wrap;
+  flex-wrap:wrap;
 
 
 
@@ -10,9 +10,9 @@
 .card {
   display:flex;
   height: 400px;
-   width: 300px;
-    justify-content: space-between;
-    margin:5px;
+  width: 300px;
+  justify-content: space-between;
+  margin:5px;
 
 
 }
@@ -31,6 +31,7 @@
   color: black;
 
 
+
 }
 
 .card-text {
@@ -46,6 +47,7 @@ h1 {
   text-align: center;
   font-family: monospace;
   font-size: 48px;
+
 
 }
 
@@ -69,42 +71,34 @@ h2 a {
    color:black;
 
 
+
 }
 
 a:link {
   text-decoration: none;
-
 }
 
 h2 a {
- background-color: #989898;
+  background-color: #989898;
   color: white;
   padding: 4px 4px 4px 4px;
   margin: 4px 4px;
   text-decoration: none;
   border-radius: 4%;
-   opacity: 0.6;
+  opacity: 0.6;
   transition: 0.3s;
 }
 
 h2 a:hover {
   background-color: #585858;
   color:white;
-}
+  }
 
 
-.new-ingredient {
-  font-family: monospace;
-
-
-}
 
 .card-text {
-
   text-decoration: none;
   color:black;
-
-
 }
 
 

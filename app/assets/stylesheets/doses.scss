@@ -1,3 +1,52 @@
 // Place all the styles related to the doses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.form-dose {
+  height:500px;
+  width:400px;
+  margin-top: 135px;
+}
+
+.cocktail {
+  height:500px;
+  width:400px;
+  margin-top: 75px;
+}
+
+.h3-ingredient {
+  font-family: monospace;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 30px;
+
+}
+
+.list-group {
+  font-family:monospace;
+  font-size: 32px;
+  text-align:center;
+
+}
+
+
+
+.description-list {
+  color:pink;
+
+}
+
+.create-cocktail {
+
+  padding-bottom: 20px;
+}
+
+.cocktail-img {
+  height:500px;
+  width:400px;
+  border-bottom: solid 5px #E3B9B7;
+  margin-top: 80px;
+}
+
+

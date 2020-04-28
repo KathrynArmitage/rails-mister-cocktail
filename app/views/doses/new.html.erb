@@ -1,8 +1,29 @@
-<%= simple_form_for [ @cocktail, @dose],html: { class: "form" } do |f| %>
-  <%= f.input :description %>
-  <%= f.input :ingredient_id, collection: Ingredient.all %>
-  <%= f.submit "Update Cocktail", class: "btn btn-primary" %>
-<% end %>
-  <%=link_to 'Back to Cocktail Homepage', cocktails_path,class: "back"} %>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-md-8">
+      <div class = "form-dose">
+        <h3 class = "h3-ingredient">Add A New Ingredient</h3>
+        <%= simple_form_for [@cocktail, @dose] do |f| %>
+        <%= f.association :ingredient, input_html: { class: "dropdown" }, include_hidden: false %>
+        <%= f.input :description %>
+        <%= f.button :submit, value= "Add", class: "back" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class = "col-md-4">
+     <%= cl_image_tag @cocktail.photo.key, class: "cocktail-img"%>
+
+  </div>
+</div>
+
+
+
+<%= link_to 'Home', cocktails_path, class: "back-2" %>
+
+ <footer class="footer">
+   <p>© 2020 Kathryn Armitage</p>
+ </footer>
 
 

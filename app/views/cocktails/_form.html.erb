@@ -1,7 +1,7 @@
 <%= simple_form_for @cocktail do |f| %>
   <%= f.text_field :name %>
    <%= f.input :photo, as: :file %>
-  <%= f.submit "Create" %>
+  <%= f.submit "Create Cocktail" %>
 <% end %>
-<%=link_to 'Back to Cocktail Homepage', cocktails_path, class: "back" %>
+<%=link_to 'Home', cocktails_path, class: "back-2" %>
 
